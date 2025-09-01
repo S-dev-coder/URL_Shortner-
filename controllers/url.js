@@ -1,4 +1,4 @@
-const  shortid  = require("shortid");
+const shortid = require("shortid");
 const URL = require("../models/url");
 
 async function handleGenerateNewShortUrl(req, res) {
@@ -15,9 +15,9 @@ async function handleGenerateNewShortUrl(req, res) {
   });
 
 
-return res.render('home',{
-  id: shortID,
-})
+  return res.render('home', {
+    id: shortID,
+  })
   return res.json({ id: shortID });
 }
 
